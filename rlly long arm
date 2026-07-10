@@ -1,0 +1,13 @@
+left_drive = Motor(Port.D, Direction.COUNTERCLOCKWISE)  
+right_drive = Motor(Port.C,Direction.CLOCKWISE)  
+robot = DriveBase(left_drive,right_drive,88,127)  
+left_motor = Motor(Port.B, Direction.CLOCKWISE)  
+right_motor = Motor(Port.A, Direction.COUNTERCLOCKWISE)  
+robot.settings(100,300,500,500)  
+robot.use_gyro(True) 
+
+robot.straight(520)
+right_motor.run_angle(-99999,9400, Stop.HOLD, True)
+left_motor.run_angle(-99999,7000)
+right_motor.run_angle(99999,3400, Stop.HOLD, True)
+robot.straight(-500)
