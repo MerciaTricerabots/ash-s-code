@@ -1,6 +1,6 @@
 left_drive = Motor(Port.A, Direction.CLOCKWISE)  
 right_drive = Motor(Port.B,Direction.COUNTERCLOCKWISE)  
-robot = DriveBase(left_drive,right_drive,60,156)  
+robot = DriveBase(left_drive,right_drive,88,156)  
 left_motor = Motor(Port.F, Direction.CLOCKWISE)  
 right_motor = Motor(Port.E, Direction.COUNTERCLOCKWISE)  
 robot.settings(100,300,500,500)  
