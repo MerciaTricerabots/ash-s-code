@@ -1,1 +1,11 @@
+left_drive = Motor(Port.D, Direction.COUNTERCLOCKWISE)  
+right_drive = Motor(Port.C,Direction.CLOCKWISE)  
+robot = DriveBase(left_drive,right_drive,88,127)  
+left_motor = Motor(Port.B, Direction.CLOCKWISE)  
+right_motor = Motor(Port.A, Direction.COUNTERCLOCKWISE)  
+robot.settings(100,300,500,500)  
+robot.use_gyro(False) 
+#sensor = ColorSensor(Port.E)
+#button = ForceSensor(Port.F)
 
+robot.arc(
